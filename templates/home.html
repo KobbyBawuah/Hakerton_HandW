@@ -1,0 +1,173 @@
+{% extends 'base.html' %}
+
+{% block style %}
+<style>
+    .bgimg {
+        background-image: url('/static/images/background.jpg');
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+    }
+.w3-btn {
+    width: 150px;
+}
+
+td {
+    text-align: center;
+}
+
+.buttombutton {
+    padding-top: 50px;
+    padding-right: 46%;
+    padding-bottom: 50px;
+    padding-left: 46.5%;
+}
+
+.book1 {
+    margin-left: 40%;
+}
+
+</style>
+{% endblock %}
+
+{% block body %}
+
+<!-- Main section about painting -->
+	<div class="bgimg">
+	<h1 class="header" style="text-align:center;font-size:60px;font-family:Jazz LET, fantasy">Fitness App</h1>
+
+	<section>
+        
+		<div class="ui doubling stackable grid container">
+				
+            <div class="seven wide column">
+                
+                <!-- Main Info -->
+				<div class="ui segment">
+                <div class="item">
+					<h2 class="header">Choose workout and Go!!.</h2>
+					
+					<div class="meta">
+						<ul>
+						<li>Select a workout</li>
+						<li>Pick area of workout</li>
+						<li>Follow workout and get in shape!!1 <em><a href="/">single click.</a></em></li>
+						</ul>
+					</div>  
+                </div>                          
+                </div>
+                <!-- Tabs For Details, Museum, Genre, Subjects -->
+				<div class="ui segment">
+
+					
+					<form action="/">
+						<p><button type="submit" class="w3-button w3-black w3-round-xlarge">Launch Fitness App</button></p>
+					</form>
+					<p style="text-align:right"><em>or watch a quick demo video</em> →</p>
+				</div>
+				
+                                     
+                          
+            </div>	<!-- END RIGHT data Column --> 
+			
+		
+			
+			<div class="nine wide column">
+			<iframe width="530" height="375" src="http://www.youtube.com/embed/W7qWa52k-nE" frameborder="0" allowfullscreen style="border-radius:5px;"></iframe>
+              <!-- <img src="images/art/works/medium/105010.jpg" alt="..." class="ui big image" id="artwork"> -->
+               
+                <!-- <div class="ui fullscreen modal"> -->
+                  <!-- <div class="image content"> -->
+                      <!-- <img src="images/art/works/large/105010.jpg" alt="..." class="image" > -->
+                      <div class="description">
+                      <p></p>
+                    </div>
+                  <!-- </div> -->
+                <!-- </div>                 -->
+                
+            </div>	<!-- END LEFT Picture Column --> 
+			
+        </div>		<!-- END Grid --> 
+    </section>		<!-- END Main Section --> 
+	
+	
+    
+    <!-- Tabs for Description, On the Web, Reviews -->
+    <section class="ui doubling stackable grid container">
+        <div class="sixteen wide column">
+        
+            <div class="ui top attached tabular menu ">
+              <a class="active item" data-tab="first">Description</a>
+              <!-- <a class="item" data-tab="second">On the Web</a> -->
+              <a class="item" data-tab="third">Reviews</a>
+            </div>
+			
+            <div class="ui bottom attached active tab segment" data-tab="first">
+              <em>Circuit Office</em>(Health and wellness hackathon Project) is a fitness app. It is implementated on the Google App Engine. Python, Html, CSS and JavaScript are used to implement this project on the Google App Engine. The project is broadly divided into the user interface, the back end to control the flow of the application.
+            </div>	<!-- END DescriptionTab --> 
+			
+            <div class="ui bottom attached tab segment" data-tab="third">                
+				<div class="ui feed">
+					
+				  <div class="event">
+					<div class="content">
+						<div class="date">12/14/2016</div>
+						<div class="meta">
+							<a class="like">
+							  <i class="star icon"></i><i class="star icon"></i><i class="star icon"></i><i class="star icon"></i><i class="star icon"></i>
+							</a>
+						</div>                    
+						<div class="summary">
+							Lol!!! It was so helpful. Would be helpful if you could add a schematic to make the application more user friendly.
+						</div>       
+					</div>
+				  </div>
+					
+				<div class="ui divider"></div>    
+					
+				  <div class="event">
+					<div class="content">
+						<div class="date">8/16/2016</div>
+						<div class="meta">
+							<a class="like">
+							  <i class="star icon"></i><i class="star icon"></i><i class="star icon"></i><i class="star icon"></i><i class="star icon"></i>
+							</a>
+						</div>
+						
+						<div class="summary">
+							Pretty decent!!!    
+						</div> 
+						
+					</div>
+				  </div>    
+								
+				</div>                                
+            </div>   <!-- END Reviews Tab -->          
+        
+        </div>        
+    </section> <!-- END Description, On the Web, Reviews Tabs --> 
+    
+    <!-- Related Images ... will implement this in assignment 2 -->    
+    <section class="ui container">
+    <h3 class="ui dividing header" id="target">Related Fitness books</h3>  
+	
+
+	<div class="row">
+	  <div class="book1" >
+		<a class="ui small image" href="https://www.amazon.ca/Yoga-Anatomy-2nd-Leslie-Kaminoff/dp/1450400248?ref_=Oct_s9_apbd_orecs_hd_bw_b3xEi&pf_rd_r=8DGE15HB1XRFSVZ26JR8&pf_rd_p=275c9f85-a606-5587-94c8-0dafedcabc20&pf_rd_s=merchandised-search-10&pf_rd_t=BROWSE&pf_rd_i=942692" alt="First Image"><img src="/static/images/yoga.jpg"></a>
+		<div class="meta"><span class="cinema">Yoga Anatomy</span></div>
+		<div class="meta"><span class="cinema">Leslie Kaminoff</span></div>
+	  </div>
+	</div>
+	
+	</section> 
+		
+		<div class="buttombutton">
+			<form action="/">
+				<p><button type="submit" class="w3-button w3-black w3-round-xlarge">Launch Fitness App</button></p>
+			</form>
+		</div>
+		</div><!-- END div for background --> 
+	
+
+{% endblock %}

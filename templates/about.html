@@ -1,0 +1,76 @@
+﻿{% extends 'base.html' %}
+
+{% block style %}
+<style>
+    .bgimg {
+        background-image: url('/static/images/background.jpg');
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+    }
+
+    .w3-btn {
+        width: 150px;
+    }
+
+    td {
+        text-align: center;
+    }
+
+    .insert {
+        padding-top: 50px;
+    }
+
+    .about {
+        margin-left: 40%;
+    }
+</style>
+
+{% endblock %}
+
+{% block body %}
+    <div class="bgimg">
+    <!-- Main section about painting -->
+    <h1 class="header" style="text-align:center;font-size:60px;font-family:Jazz LET, fantasy">About Us</h1>
+        <section>
+
+
+            <div class="seven wide column">
+
+                <!-- Main Info -->
+                <div class="ui segment">
+                    <div class="item">
+
+
+                        <ul class="ui divided items" id="paintingsList">
+
+                            <li class="item">
+                                <a class="ui small image" href="https://www.linkedin.com/in/kwabena-g-bawuah/?originalSubdomain=ca"><img src="/static/images/kwabena.png"></a>
+                                <div class="content">
+                                    <a class="header" href="https://www.linkedin.com/in/kwabena-g-bawuah/?originalSubdomain=ca">Kwabena Gyasi Bawuah</a>
+                                    <div class="meta"><span class="cinema">Electrical Engineering</span></div>
+                                    <div class="description">
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- Tabs For Details, Museum, Genre, Subjects -->
+
+
+            </div>	<!-- END RIGHT data Column -->
+
+
+
+
+        </section>		<!-- END Main Section -->
+
+
+
+    </div><!-- END div for background -->
+    {% endblock %}
